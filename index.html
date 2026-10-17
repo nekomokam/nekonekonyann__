@@ -37,7 +37,7 @@
     btn.appendChild(im);btn.addEventListener('click',()=>{const box=document.getElementById('lightbox');box.querySelector('img').src=im.src;box.classList.add('show')});gallery.appendChild(btn);
   }
   const months=document.getElementById('months'),body=document.getElementById('schedule-body');
-  const items=[['2026年10月','calendar-2026-10.jpg'],['2026年11月',null],['2026年12月',null]];
+  const items=[['2026年10月','calendar-2026-10.jpg'],['2026年11月','calendar-2026-11.jpg'],['2026年12月','calendar-2026-12.jpg']];
   function showMonth(i){
     months.querySelectorAll('button').forEach((b,n)=>{b.classList.toggle('active',n===i);b.setAttribute('aria-pressed',String(n===i))});
     body.replaceChildren();
